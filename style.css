@@ -1,0 +1,39 @@
+/* Estilos Personalizados & Animações Tech */
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Animação Suave na Imagem de Fundo de Bancada */
+@keyframes pulseSlow {
+    0%, 100% {
+        transform: scale(1.02);
+    }
+    50% {
+        transform: scale(1.06);
+    }
+}
+
+.animate-pulse-slow {
+    animation: pulseSlow 16s ease-in-out infinite;
+}
+
+/* Barra de Rolagem Personalizada */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+}
